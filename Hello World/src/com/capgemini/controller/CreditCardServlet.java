@@ -23,18 +23,14 @@ public class CreditCardServlet extends HttpServlet {
 	
 	response.setContentType("text/html");
 	PrintWriter out=response.getWriter();
-	String CardName=request.getParameter("CardName");
-	String CardNumber=request.getParameter("CardNumber");
-	long CardNum=(long)Integer.parseInt("CardNumber");
+	String CardName=request.getParameter("nameoncard");
+	String CardNumber=request.getParameter("cardnumber");
 	String month=request.getParameter("month");
-	int Month=Integer.parseInt("month");
-	String Year=request.getParameter("year");
-	int year=Integer.parseInt("year");
+	String year=request.getParameter("year");
 	String CVV=request.getParameter("CVV");
-	int Cvv=Integer.parseInt("cvv");
 	
-	out.println("CardName: "+CardName+"");
-	out.println("CardNumber:"+CardNum+"Month:"+Month+" Year:"+year+" CVV: "+Cvv+"");
+	
+	out.println("<h3>CardName: "+CardName+"<br>CardNumber:"+CardNumber+"<br>Month/Year: "+month+year);
 
 out.close();
 	}

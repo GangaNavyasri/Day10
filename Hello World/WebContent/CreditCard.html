@@ -8,16 +8,16 @@
 <h1> CreditCard</h1>
 <form action ="CreditCard" method="post">
 <label> HolderName:</label>
-<input type="text" name="username"size= "15"/>
+<input type="text" name="nameoncard"  size= "15"/>
 <br>
 <label>CardNumber</label>
-<input type="text" name="CardNumber"size= "12"/>
+<input type="text" name="cardnumber" maxlength="16" pattern="[0-9]{16}"/>
 <label>CVV</label>
-<input type="password" placeholder="CVV" size="3"/>
+<input type="password"  name="CVV" placeholder="CVV" maxlength="3"/>
 <br>
 <label>ExpiryDate</label>
 <div>
-<select name='Month'>
+<select name="month">
 <option value= '1'>1</option>
 <option value='2'>2</option>
 <option value='3'>3</option>
@@ -31,7 +31,7 @@
 <option value='11'>11</option>
 <option value='12'>12</option>
 </select>
-<select name="Year">
+<select name="year">
 <option value=1998>1998</option>
 <option value=1999>1999</option>
 <option value=2000>2000</option>
