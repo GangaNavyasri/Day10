@@ -9,7 +9,7 @@
 <body bgcolor="cyan">
 <h1>Add New Employee</h1>
 <hr>
-<form action="addEmployee" method="post">
+<form action="addEmployee" method="get">
 <label>EmployeeId:</label>
 <input type="number" name="empId"required/>
 <br>
@@ -17,9 +17,9 @@
 <input type="text" name="empName" size="15"/>
 <br>
 <label>Employee Salary:</label>
-<input type="number" name="emplSalary"size="15"/>
+<input type="number" name="empSalary"size="15"/>
 <br>
-<label>EmployeeDept:</label>
+<label>Employee Department:</label>
 <select name="empDept"required>
 <option value="" >---select--</option>
 <option value="IT">IT</option>

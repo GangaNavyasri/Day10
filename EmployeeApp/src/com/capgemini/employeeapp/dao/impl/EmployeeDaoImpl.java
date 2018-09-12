@@ -11,11 +11,17 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public List<Employee> findAllEmployees() {
-		return null;
+		return employees;
 	}
 
 	@Override
 	public Employee findEmployeeById(int employeeId) {
+		for (Employee employee : employees) {
+			if(employee.getEmployeeId()==employeeId)
+			{
+				return employee;
+			}
+		}
 		return null;
 	}
 
@@ -38,6 +44,14 @@ for(Employee employee:employees) {
 
 	@Override
 	public Employee updateEmployee(Employee employee) {
+		for (Employee employeeIter : employees) {
+			if(employeeIter.getEmployeeId()==employee.getEmployeeId())
+					{
+						employeeIter.setEmployeeDepartment(employee.getEmployeeDepartment());
+						employeeIter.setEmployeeName(employee.getEmployeeName());
+						employeeIter.setEmployeeSalary(employee.getEmployeeSalary());
+					}
+		}
 
 		return null;
 	}
