@@ -5,5 +5,8 @@
 <item elementID="=LoginApp/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1536120626707_1" label="Java Test Sources" name="test"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1538112763770_3" label="icicibank" name="icicibank">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/icicibank-master" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1536120749145_2" label="Window Working Set" name="Aggregate for window 1536120749145"/>
 </workingSetManager>
